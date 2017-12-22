@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{F528A13B-4370-E1CB-AAC1-1E9E1E537014}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "OracleProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

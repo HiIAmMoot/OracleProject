@@ -28,6 +28,16 @@
 *.a
 *.lib
 
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
 # Executables
 *.exe
 *.out
@@ -45,8 +55,12 @@
 *.VC.opendb
 
 # Precompiled Assets
-SourceArt/**/*.png
-SourceArt/**/*.tga
+*.png
+*.tga
+*.tps
+*.bmp
+*.psd
+*.gif
 
 # Binary Files
 Binaries/*
