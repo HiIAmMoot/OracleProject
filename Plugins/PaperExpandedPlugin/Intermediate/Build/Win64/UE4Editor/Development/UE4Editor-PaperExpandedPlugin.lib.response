@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PaperExpandedPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"D:\GitHub\OracleProject\Plugins\PaperExpandedPlugin\Intermediate\Build\Win64\UE4Editor\Development\PaperExpandedPlugin\Module.PaperExpandedPlugin.cpp.obj"
+"D:\GitHub\OracleProject\Plugins\PaperExpandedPlugin\Intermediate\Build\Win64\UE4Editor\Development\PaperExpandedPlugin\Module.PaperExpandedPlugin.gen.cpp.obj"
+"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\PaperExpandedPlugin\PCLaunch.rc.res"
+"D:\Program Files\Epic Games\UE_4.18\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\GitHub\OracleProject\Plugins\PaperExpandedPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-PaperExpandedPlugin.lib"
