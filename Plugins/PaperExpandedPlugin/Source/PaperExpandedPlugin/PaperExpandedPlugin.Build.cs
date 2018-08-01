@@ -1,5 +1,6 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
+using System.IO;
 using UnrealBuildTool;
 
 public class PaperExpandedPlugin : ModuleRules
@@ -9,7 +10,7 @@ public class PaperExpandedPlugin : ModuleRules
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"PaperExpandedPlugin/Public"
+                Path.Combine(ModuleDirectory, "Public")
 				// ... add public include paths required here ...
 			}
 			);
@@ -17,7 +18,7 @@ public class PaperExpandedPlugin : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"PaperExpandedPlugin/Private",
+                Path.Combine(ModuleDirectory, "Private")
 				// ... add other private include paths required here ...
 			}
 			);

@@ -4,9 +4,6 @@
 
 #include "Engine.h"
 #include "GameFramework/Actor.h"
-#include "Paths.h"
-#include "PlatformFile.h"
-#include "PlatformFilemanager.h"
 #include "OracleStaticLibrary.generated.h"
 
 USTRUCT(Blueprintable, BlueprintType)

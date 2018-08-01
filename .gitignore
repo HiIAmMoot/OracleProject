@@ -13,6 +13,10 @@
 # Precompiled Headers
 *.gch
 *.pch
+*.gen.cpp
+*.generated.h
+*.response
+*.prev
 
 # Compiled Dynamic libraries
 *.so
