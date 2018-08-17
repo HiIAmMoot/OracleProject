@@ -86,22 +86,26 @@ public:
 	static bool CheckIfInEditor();
 
 	UFUNCTION(BlueprintCallable, Category = "OracleStaticLibrary|Config")
-	bool IsInMobilePreview();
+	static bool IsInMobilePreview();
 
-	/*	
-		Blueprints does not support int64 so at some point in future int32 will not be enough */
+	/*	Blueprints does not support int64 so at some point in future int32 will not be enough */
 	UFUNCTION(BlueprintPure, Category = "OracleStaticLibrary|System")
-		static int32 GetUnixTimeStamp(const FDateTime& UTCTime)
+	static int32 GetUnixTimeStamp(const FDateTime& UTCTime)
 	{
 		//Please note it should really be int64 but that is not supported by BP yet
 		return UTCTime.ToUnixTimestamp();
 	}
+
 	/* Blueprints does not support int64 so at some point in future int32 will not be enough  */
 	UFUNCTION(BlueprintPure, Category = "OracleStaticLibrary|System")
-		static void GetUTCFromUnixTimeStamp(int32 UnixTimeStamp, FDateTime& UTCTime)
+	static void GetUTCFromUnixTimeStamp(int32 UnixTimeStamp, FDateTime& UTCTime)
 	{
 		//Please note it should really be int64 but that's not supported by BP yet
 		UTCTime = FDateTime::FromUnixTimestamp(UnixTimeStamp);
 	}
+
+	/* Adds a component to an actor*/
+	UFUNCTION(BlueprintCallable, Category = "OracleStaticLibrary|Component")
+	static UActorComponent* AddActorComponentFromClass(AActor* Actor, UClass* ActorComponentClass);
 
 };

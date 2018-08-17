@@ -84,3 +84,23 @@ bool UOracleStaticLibrary::IsInMobilePreview()
    //return GMaxRHIFeatureLevel <= ERHIFeatureLevel::ES3_1;
    return false;
 }
+
+UActorComponent* UOracleStaticLibrary::AddActorComponentFromClass(AActor* Actor, UClass* ActorComponentClass)
+{
+	TSubclassOf<UActorComponent> BaseClass = ActorComponentClass;
+	if (ActorComponentClass->IsChildOf(BaseClass))
+	{
+		UActorComponent* NewComp = NewObject<UActorComponent>(Actor, BaseClass);
+		if (!NewComp)
+		{
+			return NULL;
+		}
+		//~~~~~~~~~~~~~
+
+		NewComp->RegisterComponent(); //You must ConstructObject with a valid Outer that has world, see above     
+
+		return NewComp;
+	}
+
+	return NULL;
+}
