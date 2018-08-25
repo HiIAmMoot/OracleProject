@@ -7,7 +7,10 @@
 		{
 			"Name": "OracleProject",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Paper2D"
+			]
 		}
 	],
 	"Plugins": [
@@ -117,10 +120,6 @@
 		},
 		{
 			"Name": "SteamVR",
-			"Enabled": false
-		},
-		{
-			"Name": "ProceduralMeshComponent",
 			"Enabled": false
 		},
 		{
