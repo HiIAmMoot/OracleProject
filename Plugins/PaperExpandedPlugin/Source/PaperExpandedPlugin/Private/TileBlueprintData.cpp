@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PaperExpandedPlugin.h"
 #include "TileBlueprintData.h"
+#include "PaperExpandedPlugin.h"
 
 
-
+UTileBlueprintData::UTileBlueprintData()
+{}

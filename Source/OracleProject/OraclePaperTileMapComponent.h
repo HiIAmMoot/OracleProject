@@ -63,7 +63,10 @@ public:
 
 	UFUNCTION()
 	bool LayerCollides(UPaperTileLayer* TileLayer);
-	
+
+	//UFUNCTION()
+	//int AllocatedHeight(UPaperTileLayer* TileLayer);
+
 	UFUNCTION(BlueprintCallable)
 	bool ConvertCollisionData(int LayerIndex, TArray<FTileCollisionData>& CollisionData, ETileCollisionDelta XDirection, ETileCollisionDelta YDirection, bool InvertLocalX, bool InvertLocalY);
 

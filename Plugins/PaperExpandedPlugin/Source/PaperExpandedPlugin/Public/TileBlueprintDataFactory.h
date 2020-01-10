@@ -2,6 +2,7 @@
 
 #pragma once
 #include "UnrealEd.h"
+#include "TileBlueprintData.h"
 #include "TileBlueprintDataFactory.generated.h"
 
 

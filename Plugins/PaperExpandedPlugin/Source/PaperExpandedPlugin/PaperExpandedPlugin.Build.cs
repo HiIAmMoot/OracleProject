@@ -7,8 +7,10 @@ public class PaperExpandedPlugin : ModuleRules
 {
 	public PaperExpandedPlugin(ReadOnlyTargetRules ROTargetRules) : base(ROTargetRules)
 	{
-		
-		PublicIncludePaths.AddRange(
+        PrivatePCHHeaderFile = "Private/PaperExpandedPCH.h";
+        bFasterWithoutUnity = true;
+
+        PublicIncludePaths.AddRange(
 			new string[] {
                 Path.Combine(ModuleDirectory, "Public")
 				// ... add public include paths required here ...
@@ -28,7 +30,6 @@ public class PaperExpandedPlugin : ModuleRules
 			new string[]
 			{
 				"Core",
-                "Paper2D",
                 "UnrealEd"
 				// ... add other public dependencies that you statically link with here ...
 			}

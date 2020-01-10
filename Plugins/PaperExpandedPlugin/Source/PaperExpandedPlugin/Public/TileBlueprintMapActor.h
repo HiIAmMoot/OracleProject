@@ -3,6 +3,7 @@
 #pragma once
 #include "PaperExpandedPlugin.h"
 #include "GameFramework/Actor.h"
+#include "BlueprintSpawnerComponent.h"
 #include "TileBlueprintMapActor.generated.h"
 
 UCLASS()

@@ -1,7 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
+
 #include "PaperExpandedPlugin.h"
+#include "PaperTileSet.h"
 #include "TileBlueprintData.generated.h"
 
 /**
@@ -13,6 +15,8 @@ class PAPEREXPANDEDPLUGIN_API UTileBlueprintData : public UObject
 	GENERATED_BODY()	
 
 public:
+
+	UTileBlueprintData();
 	
 	UPROPERTY(EditAnywhere, Category = "Tile Blueprints")
 	UPaperTileSet* TileSet;

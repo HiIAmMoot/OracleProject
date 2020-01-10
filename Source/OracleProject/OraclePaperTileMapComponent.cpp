@@ -66,6 +66,17 @@ bool UOraclePaperTileMapComponent::LayerCollides(UPaperTileLayer* InTileLayer)
 	return false;
 }
 
+//int UOraclePaperTileMapComponent::AllocatedHeight(UPaperTileLayer* InTileLayer)
+//{
+	//if (InTileLayer != nullptr)
+	//{
+	//	const UProperty* Property = (UPaperTileLayer::StaticClass())->FindPropertyByName(FName(TEXT("AllocatedHeight")));
+	//	return ((UIntProperty*)Property)->GetPropertyValue_InContainer(InTileLayer);
+	//}
+
+	//return 0;
+//}
+
 bool UOraclePaperTileMapComponent::ConvertCollisionData(int LayerIndex, TArray<FTileCollisionData>& CollisionData, ETileCollisionDelta XDirection, ETileCollisionDelta YDirection, bool InvertLocalX, bool InvertLocalY)
 {
 	if (CollisionGeometryInfo.IsValidIndex(LayerIndex))
