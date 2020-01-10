@@ -1,7 +1,7 @@
-# Visual Studio 2015 user specific files
+# Visual Studio user specific files
 .vs/
 
-# Visual Studio 2015 database file
+# Visual Studio database file
 *.VC.db
 
 # Compiled Object files
@@ -72,6 +72,9 @@ Plugins/*/Binaries/*
 
 # Builds
 Build/*
+
+# Misc
+Tools/*
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
